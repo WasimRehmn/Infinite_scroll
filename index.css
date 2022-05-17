@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background-color: rgb(36, 34, 34);
+}
+
+h1 {
+    text-align: center;
+    color: aliceblue;
+}
+
+#container {
+    width: 100%;
+}
+.images {
+    width: 80%;
+    margin: 20px auto;
+    box-shadow: rgba(0, 207, 253, 0.35) 0px 10px 15px;
+}
+.images:nth-child(even) {
+    box-shadow: rgb(158, 18, 240) 0px 20px 30px -15px;
+}
+
+.images > h3 {
+    position: absolute;
+    color: white;
+    z-index: 5;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin: 5px 0px 0px 5px;
+    background-color: black;
+}
+
+.images > img {
+    width: 100%;
+    aspect-ratio: 4/1;
+    object-fit: cover;
+}
+
+.loader {
+    opacity: 0;
+    margin: 20px 0px;
+}
